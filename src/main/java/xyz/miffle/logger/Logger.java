@@ -20,7 +20,7 @@ public class Logger {
         Logger.logger.start();
     }
 
-    public static void info(String message) {
+    public synchronized static void info(String message) {
         logger.addInfo(message);
     }
 
